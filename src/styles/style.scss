@@ -22,7 +22,6 @@ header {
 			color: #FDB713;
 			font-family: "Abril Fatface";
 		}
-		// color: #fff;
 	}
 	#navBar {
 		text-align: center;
@@ -30,10 +29,8 @@ header {
 		a {
 			text-decoration: none;
 			font-size: 22px;
-			font-family: "Gentium Book Basic";
 			padding: 5px 10px;
 			transition: all .5 ease;
-			// color: #fff;
 			&:hover {
 				color: #FDB713;
 			}
@@ -43,7 +40,6 @@ header {
 
 #dash {
 	h2 {
-		// color: #fff;
 		text-align: center;
 		font-style: italic;
 		font-size: 20px;
@@ -53,7 +49,7 @@ header {
 	#subDash {
 		border: 2px solid #fff;
 		padding: 10px;
-		width: 60%;
+		width: 40%;
 		margin: 0 auto;
 		display: block;
 		h4 {
@@ -82,7 +78,6 @@ header {
 	border: 1px solid #fff;
 	width: 60%;
 	margin: 20px auto;
-	// text-align: center;
 	position: relative;
 	padding: 0 15px;
 	p {
