@@ -38,6 +38,27 @@ header {
 	}
 }
 
+.inputBox {
+	text-align: center;
+	input {
+		margin: 10px auto;
+		background: #2A2C39;
+		font-size: 18px;
+		color: #fff;
+		width: 200px;
+		display: block;
+		padding: 0 5px;
+	}
+	button {
+		border-width: 0px;
+		background: #FDB713;
+		padding: 5px 10px;
+		font-size: 18px;
+		color: #000;
+		margin-bottom: 50px;
+	}
+}
+
 #dash {
 	h2 {
 		text-align: center;

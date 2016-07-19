@@ -25,6 +25,7 @@ const LoginUser = React.createClass({
 	render: function(){
 		return (
 			<div className="inputBox login">
+				<h3>Login</h3>
 				<form onSubmit={this._handleLogin} >
 					<input type="text" name="username" placeholder="enter your email" />
 					<input type="password" name="password" placeholder="enter your password" />
@@ -46,6 +47,7 @@ const RegisterUser = React.createClass({
 	render: function(){
 		return (
 			<div className="inputBox register">
+				<h3>Not a member? Register</h3>
 				<form onSubmit={this._handleRegister}>
 					<input type="text" name="username" placeholder="enter your email" />
 					<input type="password" name="password" placeholder="enter your password" />
