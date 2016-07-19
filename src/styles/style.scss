@@ -1,10 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Abril+Fatface);
+@import url(https://fonts.googleapis.com/css?family=Gentium+Book+Basic);
+
 * {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: "Gentium Book Basic";
 	box-sizing: border-box;
+	color: #fff;
 }
 
-h1 {
-	font-size: 300px;
-	text-align: center;
-	color: fuchsia;
+body {
+	background: #2A2C39;
+	font-size: 16px;
+}
+
+header {
+	h1 {
+		text-align: center;
+		font-size: 60px;
+		font-family: "Abril Fatface";
+		letter-spacing: 2px;
+		span {
+			color: #FDB713;
+			font-family: "Abril Fatface";
+		}
+		// color: #fff;
+	}
+	#navBar {
+		text-align: center;
+		margin-bottom: 50px;
+		a {
+			text-decoration: none;
+			font-size: 22px;
+			font-family: "Gentium Book Basic";
+			padding: 5px 10px;
+			// color: #fff;
+		}
+	}
+}
+
+#dash {
+	h2 {
+		// color: #fff;
+		text-align: center;
+		font-style: italic;
+		font-size: 20px;
+		color: #FDB713;
+		margin-bottom: 30px;
+	}
+	#subDash {
+		border: 2px solid #fff;
+		padding: 10px;
+		width: 60%;
+		margin: 0 auto;
+		display: block;
+		h4 {
+			text-align: center;
+			font-size: 28px;
+			margin-top: 5px;
+			margin-bottom: 0;
+		}
+		a {
+			display: block;
+			text-decoration: none;
+			border: 1px solid #fff;
+			padding: 5px;
+			width: 150px;
+			margin: 20px auto;
+			transition: all .5s ease;
+			text-align: center;
+			&:hover {
+				background: #FDB713;
+			}
+		}
+	}
 }
