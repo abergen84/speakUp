@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Header.js'
 import {UserModel,PostModel} from '../models/models.js'
+import Backbone from 'backbone'
 
 const ComposeView = React.createClass({
 	render: function(){
@@ -18,6 +19,7 @@ const Compose = React.createClass({
 	
 	_handleForm: function(event){
 		event.preventDefault()
+		location.hash = "all"
 
 		var newPost = new PostModel({
 			author_email: UserModel.getCurrentUser().email,
@@ -31,12 +33,14 @@ const Compose = React.createClass({
 
 	render: function(){
 		return (
-			<form onSubmit={this._handleForm} >
-				<input name="title" placeholder="Title" />
-				<input name="subtitle" placeholder="Subtitle" />
-				<textarea name="content" placeholder="Speak up!" />
-				<button type="submit" value="submit">Submit</button>
-			</form>
+			<div id="compose">
+				<form onSubmit={this._handleForm} >
+					<input name="title" placeholder="Title" />
+					<input name="subtitle" placeholder="Subtitle" />
+					<textarea name="content" placeholder="Speak up!" />
+					<button type="submit" value="submit">Submit</button>
+				</form>
+			</div>
 			)
 	}
 })

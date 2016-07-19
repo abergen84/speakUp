@@ -58,7 +58,8 @@ const Post = React.createClass({
 		console.log(this)
 		return (
 			<div className="post">
-				<p>{this.props.blogPost.get('author_email')}</p>
+				<p>{this.props.blogPost.get('author_email')} wrote on: &nbsp;</p>
+				<span>{this.props.blogPost.get('createdAt').substring(0,10)}</span>
 				<h3>{this.props.blogPost.get('title')}</h3>
 				<h5>{this.props.blogPost.get('subtitle')}</h5>
 				<p>{this.props.blogPost.get('body')}</p>

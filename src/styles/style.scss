@@ -32,7 +32,11 @@ header {
 			font-size: 22px;
 			font-family: "Gentium Book Basic";
 			padding: 5px 10px;
+			transition: all .5 ease;
 			// color: #fff;
+			&:hover {
+				color: #FDB713;
+			}
 		}
 	}
 }
@@ -70,6 +74,72 @@ header {
 			&:hover {
 				background: #FDB713;
 			}
+		}
+	}
+}
+
+.post {
+	border: 1px solid #fff;
+	width: 60%;
+	margin: 20px auto;
+	// text-align: center;
+	position: relative;
+	padding: 0 15px;
+	p {
+		display: inline-block;
+	}
+	span {
+		font-style: italic;
+	}
+	h3 {
+		font-size: 30px;
+		margin: 5px 0;
+	}
+	h5 {
+		margin: 0
+	}
+	button {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		background: #FDB713;
+		color: #000;
+		border-width: 0;
+	}
+}
+
+#compose {
+	border: 2px solid #fff;
+	width: 60%;
+	padding: 10px;
+	margin: 0 auto;
+	form {
+		text-align: center;
+		input {
+			display: block;
+			background: #2A2C39;
+			color: #fff;
+			font-size: 16px;
+			border: 1px solid #fff;
+			margin: 10px auto;
+			width: 90%;
+		}
+		textarea {
+			display: block;
+			background: #2A2C39;
+			color: #fff;
+			font-size: 16px;
+			border: 1px solid #fff;
+			margin: 10px auto;
+			width: 90%;
+			height: 200px;
+		}
+		button {
+			background: #FDB713;
+			width: 100px;
+			border-width: 0;
+			font-size: 16px;
+			color: #000;
 		}
 	}
 }
