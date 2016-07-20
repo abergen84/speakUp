@@ -54,6 +54,16 @@ const Router = Backbone.Router.extend({
 		ReactDOM.render(<AllPostsView speakColl={speakColl} />, document.querySelector('.container'))	
 	},
 
+	showMine: function(){
+		var speakColl = new PostCollection()
+		speakColl.fetch({
+			url: '/api/myPosts/'
+		}).then(function(response){
+			console.log(response)
+		})
+		ReactDOM.render(<AllPostsView speakColl={speakColl} />, document.querySelector('.container'))
+	},
+
 	showCompose: function(){
 		ReactDOM.render(<ComposeView />, document.querySelector('.container'))
 	}

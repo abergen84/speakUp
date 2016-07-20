@@ -6,14 +6,25 @@ const AllPostsView = React.createClass({
 	
 	getInitialState: function(){
 		return {
-			speakColl: this.props.speakColl
+			speakColl: this.props.speakColl,
+			// mySpeakColl: this.props.mySpeakColl
 		}
 	},
 
 	componentWillMount: function(){
+		// console.log(this)
 		this.state.speakColl.on('sync update', ()=>{
 			this.setState({
 				speakColl: this.state.speakColl
+			})
+		})
+	},
+
+	componentWillReceiveProps: function(newProps){
+		// console.log(newProps)
+		newProps.speakColl.on('sync update', ()=>{
+			this.setState({
+				speakColl: newProps.speakColl
 			})
 		})
 	},
@@ -50,7 +61,7 @@ const Post = React.createClass({
 	
 	_removePost: function(){
 		this.props.blogPost.destroy({
-			url: `/api/post/${this.props.blogPost.id}`
+			url: `/api/posts/${this.props.blogPost.id}`
 		})
 	},
 

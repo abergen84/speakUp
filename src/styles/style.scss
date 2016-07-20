@@ -48,6 +48,11 @@ header {
 		width: 200px;
 		display: block;
 		padding: 0 5px;
+		transition: all .5s ease;
+		&:focus {
+			border-color: #FDB713;
+			outline: none;
+		}
 	}
 	button {
 		border-width: 0px;
@@ -139,6 +144,11 @@ header {
 			border: 1px solid #fff;
 			margin: 10px auto;
 			width: 90%;
+			transition: all .5 ease;
+			&:focus {
+				border-color: #FDB713;
+				outline: none;
+			}
 		}
 		textarea {
 			display: block;
@@ -149,6 +159,11 @@ header {
 			margin: 10px auto;
 			width: 90%;
 			height: 200px;
+			transition: all .5 ease;
+			&:focus {
+				border-color: #FDB713;
+				outline: none;
+			}
 		}
 		button {
 			background: #FDB713;

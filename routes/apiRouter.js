@@ -24,6 +24,23 @@ apiRouter
     })
   })
 
+  //find posts by email associated with account
+  apiRouter.get('/myPosts', function(request,response){
+    if(request.user){
+      Post.find({author_email: request.user.email}, function(error,records){
+        if(error){
+          response.json(error)
+        } else {
+          response.json(records)
+        }
+      })
+    } else {
+      response.status(404).json({
+        error: 'no one is logged in'
+      })
+    }
+  })
+
 apiRouter
   //fetch one
   .get('/posts/:_id', function(req, res){
